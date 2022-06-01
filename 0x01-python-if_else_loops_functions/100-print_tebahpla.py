@@ -1,11 +1,5 @@
 #!/usr/bin/python3
-
-def rev_string(x):
-    return x[::-1]
-upLow = ""
-for i in range(97, 123):
-    if i % 2:
-        upLow = upLow + upLow[i].upper()
-    else:
-        upLow = upLow + upLow[i].lower()
-    print(f"{uplow}".format(rev_string(uplow)), end="")
+i = 0
+for c in range(ord('Z'), ord('a') - 1, -1):
+    print("{}".format(chr(c - i)), end="")
+    i = 32 if i == 0 else 0
