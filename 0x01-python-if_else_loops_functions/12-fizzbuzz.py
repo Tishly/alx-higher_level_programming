@@ -10,4 +10,4 @@ def fizzbuzz():
         if i % 3 == 0 and i % 5 == 0:
             print("FizzBuzz")
         else:
-            print(f"{}".format(i), end=" ")
+            print(f"{i}".format(i), end=" ")
