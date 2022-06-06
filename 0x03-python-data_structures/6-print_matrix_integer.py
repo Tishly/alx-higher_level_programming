@@ -2,5 +2,7 @@
 
 
 def print_matrix_integer(matrix=[[]]):
-    x = '\n'.join([''.join(['{:4}'.format(item) for item in row]) for row in matrix])
-    print("{}".format(x))
+    for index, item in enumerate(matrix, start=1):
+        print(item)
+        if not index % 3:
+            print(index)
