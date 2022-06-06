@@ -3,6 +3,6 @@
 
 def print_matrix_integer(matrix=[[]]):
     for index, item in enumerate(matrix, start=1):
-        print(item)
+        print("{}".format(item))
         if not index % 3:
-            print(index)
+            print("{}".format(index))
