@@ -2,7 +2,8 @@
 
 
 def print_matrix_integer(matrix=[[]]):
-    for index, item in enumerate(matrix, start=1):
+    for i in matrix:
+        if not count % 3:
+            print("{}".format(count))
         print("{}".format(item))
-        if not index % 3:
-            print("{}".format(index))
+        count += 1
