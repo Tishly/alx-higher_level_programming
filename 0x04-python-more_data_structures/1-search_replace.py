@@ -2,7 +2,6 @@
 
 
 def search_replace(my_list, search, replace):
-#new_list = map(lambda x: x.replace(search)if search in my_list, replace)
     new_list = my_list[:]
     for i in range(len(new_list)):
         if new_list[i] == search:
