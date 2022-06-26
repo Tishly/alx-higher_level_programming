@@ -12,10 +12,14 @@ class Square:
 
     @property
     def size(self):
+        """Gets the value of private attribute size"""
         return self.__size
 
     @size.setter
     def size(self, value):
+        """Changes value of private attribute size
+        Args:
+            value (int): new value of size"""
         self.__size = value
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
@@ -28,9 +32,9 @@ class Square:
         return (self.__size * self.__size)
 
     def my_print(self):
+        """Print square as '#'"""
         for i in range(0, self.__size):
-            for j in range(0, self.__size + 1):
-                print("#", end="")
+            [print("#", end="") for j in range(0, self.__size + 1)]
             print()
         if self.__size == 0:
-            print("")
+            print()
