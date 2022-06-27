@@ -8,9 +8,9 @@ class Rectangle:
     print_symbol = '#'
 
     @classmethod
-        def square(cls, size=0):
-            """Returns a new rectangle with h==w==size"""
-            return cls.square = size
+    def square(cls, size=0):
+        """Returns a new rectangle with h==w==size"""
+        return cls.square = size
 
     def __init__(self, width=0, height=0):
         """Initializes the rectangle
