@@ -68,3 +68,4 @@ class Rectangle:
     def __del__(self):
         """returns the number of objects remaining after a deletion"""
         print("Bye rectangle" + "." + "." + ".")
+        Rectangle.number_of_instances -= 1
