@@ -21,9 +21,9 @@ class Rectangle:
     def width(self, value):
         """setter for private instance attribute width"""
         if type(value) is not int:
-            raise ("width nmust be an integer")
+            raise TypeError("width nmust be an integer")
         if value < 0:
-            raise ("width must be >= 0")
+            raise ValueError("width must be >= 0")
          self.__width = value
     
     @property
@@ -35,7 +35,7 @@ class Rectangle:
     def height(self, value):
         """setter for private instance attribute height"""
         if type(value) is not int:
-            raise ("height nmust be an integer")
+            raise TypeError("height nmust be an integer")
         if value < 0:
-            raise ("height must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
