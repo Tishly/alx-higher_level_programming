@@ -7,11 +7,6 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = '#'
 
-    @classmethod
-    def square(cls, size=0):
-        """Returns a new rectangle with h==w==size"""
-        return cls.square = size
-
     def __init__(self, width=0, height=0):
         """Initializes the rectangle
         Args:
@@ -87,3 +82,8 @@ class Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
         if not Rectangle.rect_2:
             raise TypeError("rect_2 must be an instance of Rectangle")
+
+    @classmethod
+    def square(cls, size=0):
+        """Returns a new rectangle with h==w==size"""
+        return cls(size, size)
