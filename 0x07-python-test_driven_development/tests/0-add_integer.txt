@@ -93,7 +93,7 @@ Traceback (most recent call last):
 ...
 TypeError: add_integer() missing two required positional argument: 'a' and 'b'
 
-# Checking for one element missing
+# Checking for more than 2 arguments passed
 >>> add_integer(1, 2, 3)
 Traceback (most recent call last):
 ...
