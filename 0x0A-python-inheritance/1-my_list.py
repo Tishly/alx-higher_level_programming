@@ -1,21 +1,7 @@
 #!/usr/bin/python3
 '''
-Contains lookup function
+Contains MyList class
 '''
-
-
-def lookup(obj):
-    '''
-    Function to display attributes and
-    methods of an object
-    Args:
-        obj
-    Return:
-        A list called list
-    '''
-    list = dir(obj)
-    return list
-
 
 class MyList(list):
     '''
