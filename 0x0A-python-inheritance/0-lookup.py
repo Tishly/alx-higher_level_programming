@@ -9,7 +9,7 @@ def lookup(obj):
     Function to display attributes and
     methods of an object
     Args:
-        obj 
+        obj
     Return:
         A list called list
     '''
