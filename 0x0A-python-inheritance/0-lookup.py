@@ -13,5 +13,5 @@ def lookup(obj):
     Return:
         A list called list
     '''
-    list = dir({obj})
+    list = dir(obj)
     return list
