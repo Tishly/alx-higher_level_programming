@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-'''Contains a matrix_dividedfunction for a TDD project.
+'''Contains a matrix_divided function for a TDD project.
 '''
 
 
