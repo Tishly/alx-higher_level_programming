@@ -4,9 +4,9 @@
  * A script that prints a factorial
  */
 
-const varFact = process.argv[2];
+const arg1 = process.argv[2];
 
-function fact (num) {
+/* function fact (num) {
   if (isNaN(num) === true) {
     num = 1;
     return (num);
@@ -14,7 +14,18 @@ function fact (num) {
     for (let i = 1; i <= num; i++) {
       num = num * i;
     }
-    return (parseInt(num));
+    return (num);
   }
 }
 console.log(fact(varFact));
+*/
+
+function calcFact (num) {
+  if ((isNaN(num) === true) || (num === 1)) {
+    num = 1;
+    return (num);
+  } else {
+    return num * calcFact(num - 1);
+  }
+}
+console.log(calcFact(arg1));
