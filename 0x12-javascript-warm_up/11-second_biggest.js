@@ -7,7 +7,7 @@
 
 // let a = process.argv[2];
 // let b = process.argv[3];
-const size = (process.argv.length) - 2;
+/*const size = (process.argv.length) - 2;
 let i = 0;
 
 for (; i < myArray.length; i++) {
@@ -18,3 +18,13 @@ for (; i < myArray.length; i++) {
   }
 }
 const index = ;
+*/
+
+let nextBigest = 0;
+const args = process.argv.slice(2);
+if (args.length > 1) {
+  args.sort((a, b) => a - b);
+  args.pop();
+  nextBigest = args[args.length - 1];
+}
+console.log(nextBigest);
