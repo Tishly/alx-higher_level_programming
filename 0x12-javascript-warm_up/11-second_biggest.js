@@ -7,7 +7,7 @@
 
 // let a = process.argv[2];
 // let b = process.argv[3];
-/*const size = (process.argv.length) - 2;
+/* const size = (process.argv.length) - 2;
 let i = 0;
 
 for (; i < myArray.length; i++) {
