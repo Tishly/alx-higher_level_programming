@@ -13,14 +13,9 @@ class Rectangle {
   }
 
   print () {
-    let stringToDisplay = '';
-    for (let i = 0; i < this.height; i++) {
-      for (let j = 0; j < this.width; j++) {
-        stringToDisplay += 'x';
-      }
-      stringToDisplay += '\n'
-    }
-    console.log(stringToDisplay);
+    const row = new Array(this.width).fill('X', 0, this.width);
+    const rows = new Array(this.height).fill(row.join(''), 0, this.height);
+    console.log(rows.join('\n'));
   }
 }
 module.exports = Rectangle;
