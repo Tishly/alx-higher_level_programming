@@ -11,5 +11,5 @@ exports.nbOccurences = function (list, searchElement) {
       countNum = countNum + 1;
     }
   }
-return countNum;
+  return countNum;
 };
