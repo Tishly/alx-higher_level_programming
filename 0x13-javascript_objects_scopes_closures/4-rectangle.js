@@ -11,9 +11,9 @@ class Rectangle {
 
   print () {
     for (let i = 0; i < this.height; i++) { console.log('X'.repeat(this.width)); }
-// const row = new Array(this.width).fill('X', 0, this.width);
-// const rows = new Array(this.height).fill(row.join(''), 0, this.height);
-// console.log(rows.join('\n'));
+    // const row = new Array(this.width).fill('X', 0, this.width);
+    // const rows = new Array(this.height).fill(row.join(''), 0, this.height);
+    // console.log(rows.join('\n'));
   }
 
   rotate () {
@@ -26,5 +26,5 @@ class Rectangle {
     this.height *= 2;
     this.width *= 2;
   }
-};
+}
 module.exports = Rectangle;
