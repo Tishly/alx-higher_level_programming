@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-
+Script to display value of 'X-Request-Id' variable from URL header
 """
 
 from urllib.request import urlopen
