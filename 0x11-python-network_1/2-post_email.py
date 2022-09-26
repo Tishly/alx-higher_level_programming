@@ -1,20 +1,18 @@
 #!/usr/bin/python3
 """
-A script that sends an email with POST through email variable
+Script to pass parameter to header
 """
 
-from urllib.request import urlopen
-import urllib.parse
+import urllib.request
+from urllib.request import urlopen as lop
+from urllib.parse import urlencode as enc
 import sys
 
-
-if __name__ == '__main__':
-    url = sys.argv[1]
-    e_address =  sys.argv[2]
-    values = {'email': 'e_address'}
-   """ data = urllib.parse.urlencode(values)
-    data = data.encode('utf8')"""
-    req = urllib.request.Request(url, data)
-    with urlopen(req) as response:
-        headers = response.info()
-        print('Your email is: {}'.format(response.headers['email']))
+url = sys.argv[1]
+address = sys.argv[2]
+values = {"email": address}
+data = enc(values)
+data = data.encode('utf8')
+req =  urllib.request.Request(url, data)
+with lop(req) as response:
+    print(response.read().decode('utf8'))
