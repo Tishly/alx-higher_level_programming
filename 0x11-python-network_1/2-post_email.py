@@ -14,6 +14,6 @@ if __name__ == '__main__':
     values = {"email": address}
     data = enc(values)
     data = data.encode('utf8')
-    req =  urllib.request.Request(url, data)
+    req = urllib.request.Request(url, data)
     with lop(req) as response:
         print(response.read().decode('utf8'))
