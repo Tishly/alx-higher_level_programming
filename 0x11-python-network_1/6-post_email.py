@@ -11,5 +11,5 @@ import sys
 if __name__ == '__main__':
     url = sys.argv[1]
     address = sys.argv[2]
-    r = req.post(url, data={'email' : address})
+    r = req.post(url, data={'email': address})
     print(r.text)
