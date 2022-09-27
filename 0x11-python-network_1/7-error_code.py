@@ -10,10 +10,8 @@ import sys
 
 url = sys.argv[1]
 
-try:
-    response = req.get(url)
-    print(response.text)
-except HTTPError as e:
-    if hassattr('e', 'code'):
-        if e.code >= 400:
-            print('Error code: ', e.code)
+res = req.get(url)
+if res.status_code == 200:
+    print(res.text)
+if res.status_code >= 400:
+    print('Error code: {}'.format(res.status_code))
