@@ -10,8 +10,9 @@ import sys
 
 url = sys.argv[1]
 
-res = req.get(url)
-if res.status_code == 200:
-    print(res.text)
-if res.status_code >= 400:
-    print('Error code: {}'.format(res.status_code))
+if __name__ == '__main__':
+    res = req.get(url)
+    if res.status_code == 200:
+        print(res.text)
+    if res.status_code >= 400:
+        print('Error code: {}'.format(res.status_code))
