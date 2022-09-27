@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-
+Script that displays the value of the variable
+X-Request-Id in the response header
 """
 
 import requests as req
