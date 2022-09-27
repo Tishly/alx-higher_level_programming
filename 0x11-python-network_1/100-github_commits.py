@@ -8,7 +8,7 @@ import sys
 
 if __name__ == "__main__":
     url = req.get('https://api.github.com/repos/{}/{}/commits'
-            .format(sys.argv[2], sys.argv[1]))
+                  .format(sys.argv[2], sys.argv[1]))
 
     r = url.json()
     for c in r[:10]:
