@@ -12,8 +12,8 @@ class Square:
         Args:
         size (int): The size of the new square
         position (int, int): The position of the new square"""
-        self.size = size
-        self.position = position
+        self.__size = size
+        self.__position = position
 
     @property
     def size(self):
@@ -33,10 +33,14 @@ class Square:
 
         @property
         def position(self):
+            """Gets the current position of private attribute size"""
             return (self.__position)
 
         @position.setter
         def position(self, value):
+            """Sets the position of private attribute size
+            Args:
+                value (int): new value of size"""
             if not (isinstance(value, tuple) or
                     len(value) != 2 or
                     not all(isinstance(elem, int) for elem in value) or
