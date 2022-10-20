@@ -4,6 +4,9 @@
 
 class Square:
     """Represent a new square"""
+
+    ErrMessage = "position must be a tuple of 2 positive integers"
+
     def __init__(self, size=0, position=(0, 0)):
         """Initialize a new square.
         Args:
@@ -37,10 +40,10 @@ class Square:
         def position(self, value):
             self.__position = value
             if not (isinstance(value, tuple) or
-                    len(value) != 2 or 
+                    len(value) != 2 or
                     not all(isinstance(elem, int) for elem in value) or
                     not all(elem >= 0 for elem in valu)):
-                raise TypeError("position must be a tuple of 2 positive integers")
+                raise TypeError("{}".format(ErrMessage))
             self.position = value
 
     def area(self):
