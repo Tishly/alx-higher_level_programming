@@ -42,7 +42,7 @@ class Square:
             if not (isinstance(value, tuple) or
                     len(value) != 2 or
                     not all(isinstance(elem, int) for elem in value) or
-                    not all(elem >= 0 for elem in valu)):
+                    not all(elem >= 0 for elem in value)):
                 raise TypeError("{}".format(ErrMessage))
             self.position = value
 
