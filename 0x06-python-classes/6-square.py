@@ -38,13 +38,12 @@ class Square:
 
         @position.setter
         def position(self, value):
-            self.__position = value
             if not (isinstance(value, tuple) or
                     len(value) != 2 or
                     not all(isinstance(elem, int) for elem in value) or
                     not all(elem >= 0 for elem in value)):
                 raise TypeError("{}".format(ErrMessage))
-            self.position = value
+            self.__position = value
 
     def area(self):
         """Return the square area"""
