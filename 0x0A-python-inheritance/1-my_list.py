@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-'''
+"""
 Contains MyList class
-'''
+"""
 
 class MyList(list):
-    '''
+    """
     A subclass inheriting from list
-    '''
+    """
     def __init__(self):
         """initializes the object"""
         super().__init__()
