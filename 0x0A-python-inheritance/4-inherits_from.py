@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+A python script to check object inheritance
+"""
 
 def inherits_from(obj, a_class):
     """
