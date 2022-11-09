@@ -17,6 +17,14 @@ True
 >>> len(m) > 1
 True
 
+#Checking for method docstring:
+>>> mod1 = __import__("7-base_geometry").BaseGeometry.area.__doc__
+>>> len(mod1) > 1
+True
+>>> mod2 = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
+>>> len(mod2) > 1
+True
+
 # Checking if Exception is raised:
 >>> b = BG()
 >>> b.area()
@@ -66,3 +74,29 @@ TypeError: dict must be an integer
 Traceback (most recent call last):
 ...
 TypeError: tuple must be an integer
+>>> b.integer_validator("complex", complex(1, 1))
+Traceback (most recent call last):
+...
+TypeError: complex must be an integer
+>>> b.integer_validator("float", 4.56)
+Traceback (most recent call last):
+...
+TypeError: float must be an integer
+
+# Checking for no arguments passed to integer validator method:
+>>>  b.integer_validator()
+Traceback (most recent call last):
+...
+TypeError: integer_validator() takes 2 positional argument but 0 were given
+
+# Checking if 1 argument was passed:
+>>>  b.integer_validator(1)
+Traceback (most recent call last):
+...
+TypeError: integer_validator() takes 2 positional argument but 1 was given
+
+# Checking if excess arguments were passed to integer_validator:
+>>>  b.integer_validator("argument", 1, 3)
+Traceback (most recent call last):
+...
+TypeError: integer_validator() takes 2 positional argument but 3 were given
