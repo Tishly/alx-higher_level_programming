@@ -8,4 +8,5 @@ class BaseGeometry:
     """
     An empty class that does nothing
     """
-    pass
+    def __init__(self):
+        pass
