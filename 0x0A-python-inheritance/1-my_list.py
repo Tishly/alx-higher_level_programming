@@ -3,6 +3,7 @@
 Contains MyList class
 """
 
+
 class MyList(list):
     """
     A subclass inheriting from list
