@@ -87,16 +87,16 @@ TypeError: float must be an integer
 >>>  b.integer_validator()
 Traceback (most recent call last):
 ...
-TypeError: integer_validator() takes 2 positional argument but 0 were given
+AttributeError: integer_validator() takes 2 positional argument but 0 were given
 
 # Checking if 1 argument was passed:
 >>>  b.integer_validator(1)
 Traceback (most recent call last):
 ...
-TypeError: integer_validator() takes 2 positional argument but 1 was given
+AttributeError: integer_validator() takes 2 positional argument but 1 was given
 
 # Checking if excess arguments were passed to integer_validator:
 >>>  b.integer_validator("argument", 1, 3)
 Traceback (most recent call last):
 ...
-TypeError: integer_validator() takes 2 positional argument but 3 were given
+AttributeError: integer_validator() takes 2 positional argument but 3 were given
