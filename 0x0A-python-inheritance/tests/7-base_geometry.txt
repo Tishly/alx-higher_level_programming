@@ -1,7 +1,7 @@
-The "7-base_geometry" module
+The ``7-base_geometry`` module
 ================================
 
-Using the 7-base_geometry
+Using the ``BaseGeometry``
 --------------------------------
 
 # Importing function from the module:
